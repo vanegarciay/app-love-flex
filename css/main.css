@@ -26,11 +26,19 @@ body {
 }
 
 .menu.flex-container {
-    justify-content: flex-start;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu.flex-container #menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
 }
 
 .logo-container {
-    margin-left: auto;
     margin-right: 20px;
 }
 
@@ -72,6 +80,11 @@ body {
     font-size: 2.4em;
 }
 
+.box-services {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 #services {
     background-color: #F17C72;
     text-align: center;
@@ -79,14 +92,27 @@ body {
     padding: 70px;
 }
 
-#services.flex-container {
+#services.flex-container, #work.flex-container {
     justify-content: space-around;
     flex-wrap: wrap;    
 }
 
-.box-services {
-    font-size: 1.2em;
-    font-weight: bold;
+#work {
+    padding: 40px 70px;
+    text-align: center;
+}
+
+#work .proyecto {
+    width: 300px;
+    padding: 2em;
+}
+
+#work .container {
+    padding: 0;
+}
+
+#work .proyecto img {
+    width: 100%;
 }
 
 footer {
